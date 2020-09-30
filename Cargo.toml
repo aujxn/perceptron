@@ -1,0 +1,19 @@
+[package]
+name = "ml_project_one"
+version = "0.1.0"
+authors = ["aujxn <ajn6@pdx.edu>"]
+edition = "2018"
+
+[lib]
+name = "perceptron"
+path = "src/lib.rs"
+
+[dependencies]
+rand = "0.7"
+anyhow = "1.0"
+csv = "1.1"
+nalgebra = "0.20"
+structopt = "0.3"
+chrono = "0.4"
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
