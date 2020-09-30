@@ -39,6 +39,7 @@ def scatter(train_set_dfs, test_set_dfs, labels, title):
 
 def confusion(data, title):
     texts = copy.deepcopy(data)
+    data = copy.deepcopy(data)
     for i in range(10):
         data[i][i] = 0
 
@@ -59,7 +60,7 @@ def confusion(data, title):
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
-with open('./output.json') as f:
+with open('./data/output.json') as f:
     data = json.load(f)
 
 df = pd.DataFrame(data)
